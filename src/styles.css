@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+/* Reset default margin and padding */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Prevents padding and borders from affecting the width */
+}
+
+html, body {
+  height: 100%; /* Ensure the body takes up the full height */
+  width: 100%; /* Ensure the body takes up the full width */
+}

@@ -1,0 +1,40 @@
+<header class="header">
+        <nav class="navbar">
+          <!-- Hamburger Menu for Mobile -->
+          <button class="menu-btn" (click)="toggleMenu()">☰ Menu</button>
+      
+          <!-- Dropdown Menu (Initially Hidden) -->
+          <div class="menu-items" [class.show]="menuOpen">
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact Me</a>
+            <button class="apply-btn">Apply Now</button>
+          </div>
+        </nav>
+
+        <div class="carousel-container">
+            <!-- Logo Overlay -->
+            <div class="logo-overlay">
+              <img src="https://companylogos.mortgageweb.ca/539_company.png" alt="Logo" class="logo-img" />
+            </div>
+            <!-- Carousel Images -->
+            <div class="license-overlay">
+                <div class="license-info">
+                  <span class="license-label">AGENT LICENSE ID</span>
+                  <span class="license-number">M13002164</span>
+                </div>
+                <div class="license-info">
+                  <span class="license-label">BROKERAGE LICENSE ID</span>
+                  <span class="license-number">13607</span>
+                </div>
+              </div>
+            <div
+              class="carousel"
+              [style.transform]="getTranslateX()"
+              [style.transition]="'transform 0.5s ease-in-out'"
+            >
+              <img *ngFor="let image of images" [src]="image" alt="Carousel image" />
+            </div>
+          </div>
+  </header>
+  

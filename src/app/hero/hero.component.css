@@ -1,0 +1,163 @@
+.two-columns {
+    display: flex;
+  }
+  
+  .left-column {
+    width: 30%;
+    background-color: white;
+    padding: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .profile-image {
+    max-width: 350px;
+    width: 100%;
+    border-radius: 4px;
+  }
+  
+  .right-column {
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-header{
+    text-align: center;
+  }
+  .profile-header h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 8px;
+  }
+  
+  .profile-header h2 {
+    font-size: 18px;
+    color: #4b5563;
+    margin-bottom: 24px;
+  }
+  
+  .contact-info {
+    margin-bottom: 32px;
+  }
+  
+  .info-row {
+    display: flex;
+    margin-bottom: 16px;
+  }
+  
+  .label {
+    width: 100px;
+    color: #6b7280;
+  }
+  
+  .value {
+    color: #1f2937;
+  }
+  
+  .link {
+    color: #1f2937;
+    text-decoration: none;
+  }
+  
+  .link:hover {
+    color: #1f2938;
+    text-decoration: underline;
+  }
+  
+  .button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .primary-button {
+    width: 100%;
+    padding: 8px 16px;
+    background-color: #1f2937;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  .primary-button:hover {
+    background-color:  #1f2937;
+  }
+  
+  .secondary-button {
+    width: 100%;
+    padding: 8px 16px;
+    background-color: #1f2937;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  .secondary-button:hover {
+    background-color: #111827;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .Wrapper_Form {
+        width: 100% !important;
+    }
+}
+
+
+.Wrapper_Form {
+    margin: 10px 0px;
+    width: 100%;
+    position: relative;
+    float: left;
+}
+  
+iframe{
+    width: 100%;
+}
+  /* Responsive Design */
+  @media only screen and (max-width: 600px) {
+    .Wrapper_Form {
+        width: 100% !important;
+    }
+}
+  @media (max-width: 768px) {
+    .two-columns {
+      flex-direction: column;
+    }
+  
+    .left-column,
+    .right-column {
+      width: 100%;
+    }
+
+    .left-column{
+        text-align: center;
+    }
+    .left-column img{
+        border-radius: 50%;
+    }
+    /* .button-group{
+        display: none;
+    } */
+    .button-group {
+        margin-top: 20px;
+        display: block;
+      }
+    
+      .Wrapper_Form {
+        order: 1;
+      }
+    
+      .button-group {
+        order: 2;
+      }
+  }

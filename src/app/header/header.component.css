@@ -1,0 +1,204 @@
+.header {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    background-color: black; 
+    width: 100%;
+  }
+  
+  .navbar {
+    position: relative;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    background-color: black;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+  }
+  
+  .apply-btn {
+    background-color: black; 
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .menu-btn {
+    display: none;
+    background-color: black;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+
+  .menu-items {
+    flex-direction: column;
+    background-color: black;
+    width: 100%;
+    padding: 1rem 0;
+  }
+  
+  .menu-items.show {
+    display: flex;
+  }
+  
+  .menu-items a {
+    display: inline-flex;
+    padding: 0.5rem 1rem; 
+    margin: 0.5rem 0; 
+    text-align: center; 
+    border-bottom: 1px solid black;
+    color: white; 
+    text-decoration: none; 
+    font-size: 1rem; 
+  }
+  
+  .carousel-container {
+    width: 100%; 
+    overflow: hidden; 
+    position: relative; 
+  }
+  
+  .carousel {
+    display: flex;
+    height: -webkit-fill-available;
+  }
+  
+  .carousel img {
+    width: 100%; 
+    flex-shrink: 0; 
+    object-fit: cover;
+  }
+  
+  .carousel-container {
+    height: 50vh;
+  }
+  .logo-overlay {
+    position: absolute; 
+    top: 50%;
+    transform: translateY(-50%); 
+    background: rgba(255, 255, 255, 0.8); 
+    height: inherit;
+    padding: 0.5rem;
+    z-index: 10; 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logo-img {
+    width: 300px; 
+    height: auto;
+  }
+  .license-overlay {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+    display: flex;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 15px;
+    border-radius: 4px;
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+  
+  .license-info {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+  
+  .license-label {
+    font-size: 12px;
+    opacity: 0.8;
+  }
+  
+  .license-number {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+
+  @media (max-width: 1024px) {
+    .carousel-container {
+      height: 40vh; 
+    }
+  
+    .navbar a {
+      font-size: 0.9rem; 
+    }
+  
+    .apply-btn {
+      padding: 0.4rem 0.8rem; 
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .logo-overlay {
+       position: relative;
+       height: auto;
+       top: auto;
+       transform: translateY(0%);
+    }
+    .carousel-container {
+      height: 30vh; 
+    }
+    .logo-img {
+        max-width: 150px;
+      }
+      
+      .license-overlay {
+        font-size: 12px;
+        padding: 8px 12px;
+      }
+  
+ 
+  .navbar a,
+  .apply-btn {
+    display: none;
+  }
+
+  .menu-items {
+    display: none; 
+    flex-direction: column; 
+  }
+
+  .menu-btn {
+    display: block; 
+    font-size: 1rem;
+  }
+
+  .menu-items.show {
+    display: flex; 
+  }
+
+  .menu-items a,
+  .menu-items .apply-btn {
+    display: block;
+    font-size: 0.85rem; 
+    text-align: center;
+    padding: 0.5rem 0;
+    color: white; 
+    text-decoration: none;
+  }
+
+  .menu-items a {
+    border-bottom: 1px solid #004080; 
+  }
+
+  .apply-btn {
+    margin-top: 1rem; 
+  }
+  }
+  
